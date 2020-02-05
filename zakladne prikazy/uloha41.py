@@ -41,10 +41,10 @@ for x in range(a):
     m = m + 1
 
 print("g)")
-a = list(range(1,a))
+a = list(range(1,a+1))
 b = list(a)
+b.remove(b[-1])
 b.reverse()
-b.remove(b[0])
 c = a + b
 for x in c:
     print(x*"*")
